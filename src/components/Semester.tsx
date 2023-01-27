@@ -9,7 +9,7 @@ export default function Semester({name, courses} : {name: string, courses: Array
     <li className='list-per-semester'>
         <div className={`semester-name ${aboreto.className}`}>{name}</div> 
         <ul>
-            {courses.map((course) => <li>{course}</li>)}
+            {courses.map((course) => <li key={course}>{course}</li>)}
         </ul>
     </li>
   )
